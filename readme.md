@@ -8,7 +8,8 @@ its based of a oop module from my studies in computer science, which was made in
 the [tasks](./tasks/) subfolder contains every task in its own task folder.
 
 every task folder contains a code basis with the explanation for the task in the top comments
-and a output file with an example how the console output should look like if its done correctly
+and a output file with an example how the console output should look like if its done correctly.
+the main function of each task should not be changed in any way if not directly asked for.
 
 ## structures
 
