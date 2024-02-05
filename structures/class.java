@@ -106,4 +106,38 @@ class exampleClass {
     public void setTwo(int input) {
         two = input;
     }
+
+    public void doubbleFirst() {
+        one += one;
+    }
+}
+
+/**
+ * to create a sub-class, the "extends" keyword is used in the class
+ * declaration.
+ * the subclass inherits everything from the super class that is not defined as
+ * private
+ */
+class exampleClassTwo extends exampleClass {
+    private int zero;
+
+    /**
+     * when creating a subclass object, sometimes its necessary to create the super
+     * classes object.
+     * this is done with the super() method, which calls the super classes
+     * constructor.
+     */
+    public exampleClassTwo() {
+        super(2);
+        this.zero = 0;
+    }
+
+    /**
+     * if you want to change a method, already defined in the super class, you
+     * annotate it with @override
+     */
+    @Override
+    public void doubbleFirst() {
+        zero += zero;
+    }
 }
