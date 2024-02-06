@@ -11,7 +11,7 @@ public class task {
         c.set_radius(3.3);
         System.out.println("part 2:");
         p.print(false);
-        System.out.print(" == ()" + p.getX() + "," + p.getY() + ")\n");
+        System.out.print(" == (" + p.getX() + ", " + p.getY() + ")\n");
         c.print();
         p.move(1.0, 1.0);
         c.move(2.0, 2.0);
@@ -31,15 +31,15 @@ class Point {
     }
 
     void print(boolean endl) {
-        if (endl = true) {
-            System.out.println("(" + x + "," + y + ")");
+        if (endl == false) {
+            System.out.print("(" + x + ", " + y + ")");
         } else {
             this.print();
         }
     }
 
     void print() {
-        System.out.print("(" + x + "," + y + ")");
+        System.out.print("(" + x + ", " + y + ")\n");
     }
 
     void setX(double input) {
